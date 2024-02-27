@@ -1,0 +1,108 @@
+{
+  "DisplayName": "SendMail_Information",
+  "Tooltip": "Send mail with \"Generic Information\" template\r\nThe sender email and name are taken from Config\r\nAttachments are not required",
+  "HelpLink": null,
+  "Color": "#E42020",
+  "OriginalIconFileName": null,
+  "Arguments": [
+    {
+      "Name": "in_MailTo",
+      "DisplayName": "Mail TO",
+      "Category": "Recipients",
+      "Tooltip": "Recipient list (TO)",
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "DataSourceItems": []
+    },
+    {
+      "Name": "in_MailCC",
+      "DisplayName": "Mail CC",
+      "Category": "Recipients",
+      "Tooltip": "Recipient list (CC)",
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "DataSourceItems": []
+    },
+    {
+      "Name": "in_MailCCO",
+      "DisplayName": "Mail BCC",
+      "Category": "Recipients",
+      "Tooltip": "Recipient list (BCC)",
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "DataSourceItems": []
+    },
+    {
+      "Name": "in_ContactLanguage",
+      "DisplayName": "ContactLanguage",
+      "Category": "Recipients",
+      "Tooltip": "Contact language. Valid values: es-ES, en-US, pt-BR",
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_Config",
+      "DisplayName": "Config",
+      "Category": "Common",
+      "Tooltip": "Config Dictionary. Needs \"Mail\" related keys and \"CredMail\"",
+      "Placeholder": null,
+      "Widget": "Dictionary",
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "DataSourceItems": []
+    },
+    {
+      "Name": "in_ContinueError",
+      "DisplayName": "Continue On Error",
+      "Category": "Common",
+      "Tooltip": "Bool to ignore any exception being thronw when sending the mail and/or if recipients are not valid",
+      "Placeholder": null,
+      "Widget": "Toggle",
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "DataSourceItems": []
+    },
+    {
+      "Name": "in_Adjuntos",
+      "DisplayName": "Attachments ",
+      "Category": "Common",
+      "Tooltip": "Array of attachment filepaths",
+      "Placeholder": null,
+      "Widget": "StringArray",
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "DataSourceItems": []
+    },
+    {
+      "Name": "in_Texto",
+      "DisplayName": "Mail Body",
+      "Category": "Info",
+      "Tooltip": "Text that will be sent in the main message body",
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "DataSourceItems": []
+    },
+    {
+      "Name": "in_FechaComienzoEjec",
+      "DisplayName": "Date Process Started",
+      "Category": "Info",
+      "Tooltip": "String of DateTime in format \"s\" (short datetime form) the process was started at",
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "DataSourceItems": []
+    }
+  ]
+}

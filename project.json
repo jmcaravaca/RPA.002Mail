@@ -1,0 +1,96 @@
+{
+  "name": "RPA.002Mail",
+  "projectId": "69754212-86fe-47f2-a15d-4990c9279a50",
+  "description": "Library to send mails using different preconfigured templates",
+  "main": "NewActivity.xaml",
+  "dependencies": {
+    "System.Text.Encoding.CodePages": "7.0.0",
+    "UiPath.Excel.Activities": "2.16.2",
+    "UiPath.Mail.Activities": "1.18.2",
+    "UiPath.System.Activities": "23.10.5",
+    "UiPath.Testing.Activities": "23.10.1"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "22.10.5.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Library",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": [
+        "_CheckAndSendMail.xaml",
+        "FormatHTMLMessage.xaml",
+        "InitAllSettings.xaml",
+        "_GetStorageFiles.xaml"
+      ]
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "35a85437-3dd3-483c-8280-5d7a07f45b2d",
+        "dataVariationFilePath": ".variations\\TestData_Hoja1_1.json",
+        "testCaseType": "TestCase",
+        "fileName": "TestCaseBusinessExc.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "548b9725-dc45-4776-b73c-5da178e8d7d6",
+        "dataVariationFilePath": ".variations\\TestData_Hoja1_1.json",
+        "testCaseType": "TestCase",
+        "fileName": "TestCaseInformation.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "19dad029-c8d2-455e-9873-4b479e9684cd",
+        "dataVariationFilePath": ".variations\\TestData_Hoja1_1.json",
+        "testCaseType": "TestCase",
+        "fileName": "TestCaseStartProcess.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "7cbf4240-399f-4602-854a-448d858526ac",
+        "dataVariationFilePath": ".variations\\TestData_Hoja1_1.json",
+        "testCaseType": "TestCase",
+        "fileName": "TestCaseProcessFaulted.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "74800d0d-8ad7-4ba1-aceb-e15f13c6ab86",
+        "dataVariationFilePath": ".variations\\TestData_Hoja1_1.json",
+        "testCaseType": "TestCase",
+        "fileName": "TestCaseProcessFinished.xaml"
+      }
+    ],
+    "modernBehavior": true,
+    "saveToCloud": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}

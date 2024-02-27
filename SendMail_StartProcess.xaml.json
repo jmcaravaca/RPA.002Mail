@@ -1,0 +1,97 @@
+{
+  "DisplayName": "SendMail_StartProcess",
+  "Tooltip": "Send mail with \"Start Process\" template\r\nThe sender email and name are taken from Config\r\nAttachments are not required\r\n",
+  "HelpLink": null,
+  "Color": "#FF002E",
+  "OriginalIconFileName": null,
+  "Arguments": [
+    {
+      "Name": "in_Config",
+      "DisplayName": "Config",
+      "Category": "Common",
+      "Tooltip": "Config Dictionary. Needs \"Mail\" related keys and \"CredMail\"\r\n",
+      "Placeholder": null,
+      "Widget": "Dictionary",
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "DataSourceItems": []
+    },
+    {
+      "Name": "in_ContinueError",
+      "DisplayName": "Continue On Error",
+      "Category": "Common",
+      "Tooltip": "Bool to ignore any exception being thronw when sending the mail and/or if recipients are not valid\r\n",
+      "Placeholder": null,
+      "Widget": "Toggle",
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "DataSourceItems": []
+    },
+    {
+      "Name": "in_Adjuntos",
+      "DisplayName": "Attachments",
+      "Category": "Common",
+      "Tooltip": "Array of attachment filepaths\r\n",
+      "Placeholder": null,
+      "Widget": "StringArray",
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "DataSourceItems": []
+    },
+    {
+      "Name": "in_ContactLanguage",
+      "DisplayName": "ContactLanguage",
+      "Category": "Common",
+      "Tooltip": "Contact language. Valid values: es-ES, en-US, pt-BR",
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_MailTo",
+      "DisplayName": "Mail TO",
+      "Category": "Recipients",
+      "Tooltip": "Recipient list (TO)\r\n",
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "DataSourceItems": []
+    },
+    {
+      "Name": "in_MailCC",
+      "DisplayName": "Mail CC",
+      "Category": "Recipients",
+      "Tooltip": "Recipient list (CC)\r\n",
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "DataSourceItems": []
+    },
+    {
+      "Name": "in_MailCCO",
+      "DisplayName": "Mail BCC",
+      "Category": "Recipients",
+      "Tooltip": "Recipient list (BCC)\r\n",
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "DataSourceItems": []
+    },
+    {
+      "Name": "in_FechaComienzoEjec",
+      "DisplayName": "Start Date",
+      "Category": "Process Data",
+      "Tooltip": "String of DateTime in format \"s\" (short datetime form) the process was started at",
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "DataSourceItems": []
+    }
+  ]
+}

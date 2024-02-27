@@ -1,0 +1,130 @@
+{
+  "DisplayName": "SendMail_ProcessFaulted",
+  "Tooltip": "Send mail with \"Process Faulted\" template\r\nThe sender email and name are taken from Config\r\nAttachments are not required",
+  "HelpLink": null,
+  "Color": "#E42020",
+  "OriginalIconFileName": null,
+  "Arguments": [
+    {
+      "Name": "in_Config",
+      "DisplayName": "Config",
+      "Category": "Common",
+      "Tooltip": "Config Dictionary. Needs \"Mail\" related keys and \"CredMail\"",
+      "Placeholder": null,
+      "Widget": "Dictionary",
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "DataSourceItems": []
+    },
+    {
+      "Name": "in_ContinueError",
+      "DisplayName": "Continue On Error",
+      "Category": "Common",
+      "Tooltip": "Continue On Error",
+      "Placeholder": null,
+      "Widget": "Toggle",
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "DataSourceItems": []
+    },
+    {
+      "Name": "in_Adjuntos",
+      "DisplayName": "Attachments",
+      "Category": "Common",
+      "Tooltip": "Array of attachment filepaths",
+      "Placeholder": null,
+      "Widget": "StringArray",
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "DataSourceItems": []
+    },
+    {
+      "Name": "in_ContactLanguage",
+      "DisplayName": "ContactLanguage",
+      "Category": "Common",
+      "Tooltip": "Contact language. Valid values: es-ES, en-US, pt-BR",
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_MailTo",
+      "DisplayName": "Mail TO",
+      "Category": "Recipients",
+      "Tooltip": "Recipient list (TO)",
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "DataSourceItems": []
+    },
+    {
+      "Name": "in_MailCC",
+      "DisplayName": "Mail CC",
+      "Category": "Recipients",
+      "Tooltip": "Recipient list (CC)",
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "DataSourceItems": []
+    },
+    {
+      "Name": "in_MailCCO",
+      "DisplayName": "Mail BCC",
+      "Category": "Recipients",
+      "Tooltip": "Recipient list (BCC)",
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "DataSourceItems": []
+    },
+    {
+      "Name": "in_FechaEjecucion",
+      "DisplayName": "Process Start Date",
+      "Category": "Faulted Data",
+      "Tooltip": "String of DateTime in format \"s\" (short datetime form) the process was started at",
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "DataSourceItems": []
+    },
+    {
+      "Name": "in_IDEjecucion",
+      "DisplayName": "Job ID",
+      "Category": "Faulted Data",
+      "Tooltip": "Identifier for the job",
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "DataSourceItems": []
+    },
+    {
+      "Name": "in_Modulo",
+      "DisplayName": "Process Module",
+      "Category": "Faulted Data",
+      "Tooltip": "Process Module (colector/consumidor)",
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "DataSourceItems": []
+    },
+    {
+      "Name": "in_DescripcionExcep",
+      "DisplayName": "Exception Message",
+      "Category": "Faulted Data",
+      "Tooltip": "Exception Message being thrown",
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "DataSourceItems": []
+    }
+  ]
+}
