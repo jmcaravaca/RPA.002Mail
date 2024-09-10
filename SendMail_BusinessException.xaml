@@ -1,46 +1,21 @@
 <Activity mc:Ignorable="sap sap2010" x:Class="EnvioEmail_ExcepcionNegocio" this:EnvioEmail_ExcepcionNegocio.in_ContinueError="True" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:st="clr-namespace:System.Text;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
-    <x:Property sap2010:Annotation.AnnotationText="Config Dictionary. Needs &quot;Mail&quot; related keys and &quot;CredMail&quot;" Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))">
-      <x:Property.Attributes>
-        <RequiredArgumentAttribute />
-      </x:Property.Attributes>
-    </x:Property>
-    <x:Property sap2010:Annotation.AnnotationText="Recipient list (TO)" Name="in_MailTo" Type="InArgument(x:String)" />
-    <x:Property sap2010:Annotation.AnnotationText="Recipient list (CC)" Name="in_MailCC" Type="InArgument(x:String)" />
-    <x:Property sap2010:Annotation.AnnotationText="Recipient list (BCC)" Name="in_MailCCO" Type="InArgument(x:String)" />
+    <x:Property sap2010:Annotation.AnnotationText="Config Dictionary. Needs &quot;Mail&quot; related keys and &quot;CredMail&quot;" Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
+    <x:Property sap2010:Annotation.AnnotationText="Recipient list (TO)" Name="in_MailTo" Type="InArgument(s:String[])" />
+    <x:Property sap2010:Annotation.AnnotationText="Recipient list (CC)" Name="in_MailCC" Type="InArgument(s:String[])" />
+    <x:Property sap2010:Annotation.AnnotationText="Recipient list (BCC)" Name="in_MailCCO" Type="InArgument(s:String[])" />
     <x:Property sap2010:Annotation.AnnotationText="Bool to ignore any exception being thronw when sending the mail and/or if recipients are not valid" Name="in_ContinueError" Type="InArgument(x:Boolean)" />
-    <x:Property sap2010:Annotation.AnnotationText="String of DateTime in format &quot;s&quot; (short datetime form) the transaction was started at" Name="in_FechaCreacionTransaccion" Type="InArgument(x:String)">
-      <x:Property.Attributes>
-        <RequiredArgumentAttribute />
-      </x:Property.Attributes>
-    </x:Property>
-    <x:Property sap2010:Annotation.AnnotationText="Reference of the item that was not processed" Name="in_IDTransaccion" Type="InArgument(x:String)">
-      <x:Property.Attributes>
-        <RequiredArgumentAttribute />
-      </x:Property.Attributes>
-    </x:Property>
-    <x:Property sap2010:Annotation.AnnotationText="Exception Code being thrown" Name="in_CodigoExcepcion" Type="InArgument(x:String)">
-      <x:Property.Attributes>
-        <RequiredArgumentAttribute />
-      </x:Property.Attributes>
-    </x:Property>
-    <x:Property sap2010:Annotation.AnnotationText="Exception Message being thrown" Name="in_DescripcionExcepcion" Type="InArgument(x:String)">
-      <x:Property.Attributes>
-        <RequiredArgumentAttribute />
-      </x:Property.Attributes>
-    </x:Property>
-    <x:Property sap2010:Annotation.AnnotationText="Array of attachment filepaths" Name="in_Adjuntos" Type="InArgument(s:String[])" />
-    <x:Property sap2010:Annotation.AnnotationText="Contact language. Valid values: es-ES, en-US, pt-BR" Name="in_ContactLanguage" Type="InArgument(x:String)">
-      <x:Property.Attributes>
-        <RequiredArgumentAttribute />
-      </x:Property.Attributes>
-    </x:Property>
+    <x:Property sap2010:Annotation.AnnotationText="Contact language. Valid values: es-ES, en-US, pt-BR" Name="in_ContactLanguage" Type="InArgument(x:String)" />
+    <x:Property sap2010:Annotation.AnnotationText="Reference of the item that was not processed" Name="in_TransactionID" Type="InArgument(x:String)" />
+    <x:Property sap2010:Annotation.AnnotationText="Exception Code being thrown" Name="in_ExceptionCode" Type="InArgument(x:String)" />
+    <x:Property sap2010:Annotation.AnnotationText="Exception Message being thrown" Name="in_ExceptionDetails" Type="InArgument(x:String)" />
+    <x:Property sap2010:Annotation.AnnotationText="Array of attachment filepaths" Name="in_Attachments" Type="InArgument(s:String[])" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
   <sap2010:Annotation.AnnotationText>UPTF00000134eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjoiU2VuZCBtYWlsIHdpdGggXCJCdXNpbmVzcyBFeGNlcHRpb25cIiB0ZW1wbGF0ZVxyXG5UaGUgc2VuZGVyIGVtYWlsIGFuZCBuYW1lIGFyZSB0YWtlbiBmcm9tIENvbmZpZ1xyXG5BdHRhY2htZW50cyBhcmUgbm90IHJlcXVpcmVkIiwiPFZlcnNpb24+a19fQmFja2luZ0ZpZWxkIjoxfQ==</sap2010:Annotation.AnnotationText>
-  <sap:VirtualizedContainerService.HintSize>1158,2560</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1234,2746</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>EnvioEmail_ExcepcionNegocio_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -136,9 +111,11 @@
       <AssemblyReference>UiPathTeam.SharePoint.Activities</AssemblyReference>
       <AssemblyReference>WallpaperChanger.Activities</AssemblyReference>
       <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Send mail with &quot;Business Exception&quot; template&#xA;The sender email and name are taken from Config&#xA;Attachments are not required" DisplayName="EnvioEmail_ExcepcionNegocio" sap:VirtualizedContainerService.HintSize="718,2495" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Send mail with &quot;Business Exception&quot; template&#xD;&#xA;The sender email and name are taken from Config&#xD;&#xA;Attachments are not required" DisplayName="EnvioEmail_ExcepcionNegocio" sap:VirtualizedContainerService.HintSize="696,2681" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="CuerpoHTML" />
       <Variable x:TypeArguments="x:String" Name="AsuntoEmail" />
@@ -148,8 +125,8 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="656,92" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Start EnvioEmail_ExcepcionNegocio&quot;]" />
-    <Sequence DisplayName="Leyendo la plantilla" sap:VirtualizedContainerService.HintSize="656,784" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="634,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Start EnvioEmail_ExcepcionNegocio&quot;]" />
+    <Sequence DisplayName="Leyendo la plantilla" sap:VirtualizedContainerService.HintSize="634,882" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="templatefile" />
       </Sequence.Variables>
@@ -159,7 +136,7 @@
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,92" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Trace" Message="[&quot;Downloading template&quot;]" />
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,141" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Trace" Message="[&quot;Downloading template&quot;]" />
       <InvokeMethod DisplayName="Add Windows Encoding" sap:VirtualizedContainerService.HintSize="388,136" sap2010:WorkflowViewState.IdRef="InvokeMethod_1" MethodName="RegisterProvider" TargetType="st:Encoding">
         <InArgument x:TypeArguments="st:EncodingProvider">[System.Text.CodePagesEncodingProvider.Instance]</InArgument>
       </InvokeMethod>
@@ -171,16 +148,16 @@
         </ui:InvokeWorkflowFile.Arguments>
       </ui:InvokeWorkflowFile>
       <ui:ReadTextFile File="{x:Null}" Content="[CuerpoHTML]" DisplayName="Read Text File" Encoding="windows-1252" FileName="[templatefile]" sap:VirtualizedContainerService.HintSize="388,80" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,92" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Trace" Message="[&quot;Template read&quot;]" />
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,141" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Trace" Message="[&quot;Template read&quot;]" />
     </Sequence>
-    <Sequence DisplayName="Common Actions" sap:VirtualizedContainerService.HintSize="656,1296" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence DisplayName="Common Actions" sap:VirtualizedContainerService.HintSize="634,1286" sap2010:WorkflowViewState.IdRef="Sequence_3">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence DisplayName="Merge Dicts" sap:VirtualizedContainerService.HintSize="594,583" sap2010:WorkflowViewState.IdRef="Sequence_4">
+      <Sequence DisplayName="Merge Dicts" sap:VirtualizedContainerService.HintSize="572,620" sap2010:WorkflowViewState.IdRef="Sequence_4">
         <Sequence.Variables>
           <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)" Name="configMail" />
         </Sequence.Variables>
@@ -189,20 +166,20 @@
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="InitAllSettings.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="532,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="InitAllSettings.xaml">
+        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="InitAllSettings.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="510,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="InitAllSettings.xaml">
           <ui:InvokeWorkflowFile.Arguments>
             <InArgument x:TypeArguments="x:String" x:Key="in_ConfigFile">Config.xlsx</InArgument>
             <InArgument x:TypeArguments="s:String[]" x:Key="in_ConfigSheets">[{"Constants"}]</InArgument>
             <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="out_Config">[configMail]</OutArgument>
           </ui:InvokeWorkflowFile.Arguments>
         </ui:InvokeWorkflowFile>
-        <ui:ForEach x:TypeArguments="scg:KeyValuePair(x:String, x:Object)" CurrentIndex="{x:Null}" DisplayName="For Each KVPair, add" sap:VirtualizedContainerService.HintSize="532,319" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[configMail]">
+        <ui:ForEach x:TypeArguments="scg:KeyValuePair(x:String, x:Object)" CurrentIndex="{x:Null}" DisplayName="For Each KVPair, add" sap:VirtualizedContainerService.HintSize="510,356" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[configMail]">
           <ui:ForEach.Body>
             <ActivityAction x:TypeArguments="scg:KeyValuePair(x:String, x:Object)">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="scg:KeyValuePair(x:String, x:Object)" Name="kvpair" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,193" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476,170" sap2010:WorkflowViewState.IdRef="Sequence_5">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -221,13 +198,13 @@
           </ui:ForEach.Body>
         </ui:ForEach>
       </Sequence>
-      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="FormatHTMLMessage.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="594,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="FormatHTMLMessage.xaml">
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="FormatHTMLMessage.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="572,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="FormatHTMLMessage.xaml">
         <ui:InvokeWorkflowFile.Arguments>
           <InOutArgument x:TypeArguments="x:String" x:Key="CuerpoHTML">[CuerpoHTML]</InOutArgument>
           <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[in_Config]</InArgument>
         </ui:InvokeWorkflowFile.Arguments>
       </ui:InvokeWorkflowFile>
-      <ui:MultipleAssign DisplayName="Multiple Assign - replace de variables" sap:VirtualizedContainerService.HintSize="594,256" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+      <ui:MultipleAssign DisplayName="Multiple Assign - replace de variables" sap:VirtualizedContainerService.HintSize="572,209" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
         <ui:MultipleAssign.AssignOperations>
           <scg:List x:TypeArguments="ui:AssignOperation" Capacity="16">
             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_17">
@@ -235,15 +212,10 @@
                 <OutArgument x:TypeArguments="x:String">[AsuntoEmail]</OutArgument>
               </ui:AssignOperation.To>
               <ui:AssignOperation.Value>
-                <InArgument x:TypeArguments="x:String">[in_Config("Subject_EmailErrorNegocio-" + in_ContactLanguage).ToString.Replace(in_config("Sust_NombreProceso").ToString,in_config("MailProcessShortName").toString)]</InArgument>
-              </ui:AssignOperation.Value>
-            </ui:AssignOperation>
-            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_12">
-              <ui:AssignOperation.To>
-                <OutArgument x:TypeArguments="x:String">[CuerpoHTML]</OutArgument>
-              </ui:AssignOperation.To>
-              <ui:AssignOperation.Value>
-                <InArgument x:TypeArguments="x:String">[CuerpoHTML.replace(in_config("Sust_FechaTransaccion").toString, in_FechaCreacionTransaccion)]</InArgument>
+                <InArgument x:TypeArguments="x:String" xml:space="preserve">[in_Config("Subject_EmailErrorNegocio-" +
+in_ContactLanguage).ToString.Replace(
+	in_config("Sust_NombreProceso").ToString,
+	in_config("MailProcessFullName").toString)]</InArgument>
               </ui:AssignOperation.Value>
             </ui:AssignOperation>
             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_14">
@@ -251,7 +223,7 @@
                 <OutArgument x:TypeArguments="x:String">[CuerpoHTML]</OutArgument>
               </ui:AssignOperation.To>
               <ui:AssignOperation.Value>
-                <InArgument x:TypeArguments="x:String">[CuerpoHTML.replace(in_config("Sust_CodigoExcepcion").toString, in_CodigoExcepcion)]</InArgument>
+                <InArgument x:TypeArguments="x:String">[CuerpoHTML.replace(in_config("Sust_CodigoExcepcion").toString, in_ExceptionCode)]</InArgument>
               </ui:AssignOperation.Value>
             </ui:AssignOperation>
             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_18">
@@ -259,15 +231,7 @@
                 <OutArgument x:TypeArguments="x:String">[CuerpoHTML]</OutArgument>
               </ui:AssignOperation.To>
               <ui:AssignOperation.Value>
-                <InArgument x:TypeArguments="x:String">[CuerpoHTML.replace(in_config("Sust_IDTransaccion").toString, in_IDTransaccion).replace(in_config("Sust_IDTransaccion2").toString, in_IDTransaccion)]</InArgument>
-              </ui:AssignOperation.Value>
-            </ui:AssignOperation>
-            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_19">
-              <ui:AssignOperation.To>
-                <OutArgument x:TypeArguments="x:String">[CuerpoHTML]</OutArgument>
-              </ui:AssignOperation.To>
-              <ui:AssignOperation.Value>
-                <InArgument x:TypeArguments="x:String">[CuerpoHTML.replace(in_config("Sust_DescripciónTransaccion").toString, in_CodigoExcepcion+" - "+in_DescripcionExcepcion)]</InArgument>
+                <InArgument x:TypeArguments="x:String">[CuerpoHTML.replace(in_config("Sust_IDTransaccion").toString, in_TransactionID)]</InArgument>
               </ui:AssignOperation.Value>
             </ui:AssignOperation>
             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_20">
@@ -275,7 +239,7 @@
                 <OutArgument x:TypeArguments="x:String">[CuerpoHTML]</OutArgument>
               </ui:AssignOperation.To>
               <ui:AssignOperation.Value>
-                <InArgument x:TypeArguments="x:String">[CuerpoHTML.replace(in_config("Sust_DescripcionExcepcion").toString, in_DescripcionExcepcion)]</InArgument>
+                <InArgument x:TypeArguments="x:String">[CuerpoHTML.replace(in_config("Sust_DescripcionExcepcion").toString, in_ExceptionDetails)]</InArgument>
               </ui:AssignOperation.Value>
             </ui:AssignOperation>
           </scg:List>
@@ -287,20 +251,36 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:MultipleAssign>
-      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="_CheckAndSendMail.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="594,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="_CheckAndSendMail.xaml">
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="_CheckAndSendMail.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="572,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="_CheckAndSendMail.xaml">
         <ui:InvokeWorkflowFile.Arguments>
-          <InArgument x:TypeArguments="x:String" x:Key="in_MailTo">[in_MailTo]</InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="in_MailCC">[in_MailCC]</InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="in_MailCCO">[in_MailCCO]</InArgument>
-          <InArgument x:TypeArguments="x:Boolean" x:Key="in_ContinueError">[in_ContinueError]</InArgument>
-          <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[in_Config]</InArgument>
-          <InArgument x:TypeArguments="s:String[]" x:Key="in_Adjuntos">[in_Adjuntos]</InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="in_AsuntoEmail">[AsuntoEmail]</InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="in_CuerpoHTML">[CuerpoHTML]</InArgument>
+          <InArgument x:TypeArguments="s:String[]" x:Key="in_MailTo">
+            <VisualBasicValue x:TypeArguments="s:String[]" ExpressionText="in_MailTo" />
+          </InArgument>
+          <InArgument x:TypeArguments="s:String[]" x:Key="in_MailCC">
+            <VisualBasicValue x:TypeArguments="s:String[]" ExpressionText="in_MailCC" />
+          </InArgument>
+          <InArgument x:TypeArguments="s:String[]" x:Key="in_MailCCO">
+            <VisualBasicValue x:TypeArguments="s:String[]" ExpressionText="in_MailCCO" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:Boolean" x:Key="in_ContinueError">
+            <VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="in_ContinueError" />
+          </InArgument>
+          <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">
+            <VisualBasicValue x:TypeArguments="scg:Dictionary(x:String, x:Object)" ExpressionText="in_Config" />
+          </InArgument>
+          <InArgument x:TypeArguments="s:String[]" x:Key="in_Adjuntos">
+            <VisualBasicValue x:TypeArguments="s:String[]" ExpressionText="in_Attachments" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_AsuntoEmail">
+            <VisualBasicValue x:TypeArguments="x:String" ExpressionText="AsuntoEmail" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_CuerpoHTML">
+            <VisualBasicValue x:TypeArguments="x:String" ExpressionText="CuerpoHTML" />
+          </InArgument>
         </ui:InvokeWorkflowFile.Arguments>
       </ui:InvokeWorkflowFile>
     </Sequence>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="493,92" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Trace" Message="[&quot;Fin EnvioEmail_ExcepcionNegocio&quot;]">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="634,141" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Trace" Message="[&quot;Fin EnvioEmail_ExcepcionNegocio&quot;]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>

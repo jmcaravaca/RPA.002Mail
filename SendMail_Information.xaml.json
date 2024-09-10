@@ -14,6 +14,7 @@
       "Widget": "TextComposer",
       "IsRequired": false,
       "IsPrincipal": true,
+      "ArgumentType": 0,
       "DataSourceItems": []
     },
     {
@@ -25,6 +26,7 @@
       "Widget": "TextComposer",
       "IsRequired": false,
       "IsPrincipal": true,
+      "ArgumentType": 0,
       "DataSourceItems": []
     },
     {
@@ -36,6 +38,7 @@
       "Widget": "TextComposer",
       "IsRequired": false,
       "IsPrincipal": true,
+      "ArgumentType": 0,
       "DataSourceItems": []
     },
     {
@@ -47,6 +50,7 @@
       "Widget": "TextComposer",
       "IsRequired": true,
       "IsPrincipal": true,
+      "ArgumentType": 0,
       "DataSourceItems": null
     },
     {
@@ -58,6 +62,7 @@
       "Widget": "Dictionary",
       "IsRequired": false,
       "IsPrincipal": true,
+      "ArgumentType": 0,
       "DataSourceItems": []
     },
     {
@@ -69,10 +74,11 @@
       "Widget": "Toggle",
       "IsRequired": false,
       "IsPrincipal": true,
+      "ArgumentType": 0,
       "DataSourceItems": []
     },
     {
-      "Name": "in_Adjuntos",
+      "Name": "in_Attachments",
       "DisplayName": "Attachments ",
       "Category": "Common",
       "Tooltip": "Array of attachment filepaths",
@@ -80,10 +86,11 @@
       "Widget": "StringArray",
       "IsRequired": false,
       "IsPrincipal": true,
+      "ArgumentType": 0,
       "DataSourceItems": []
     },
     {
-      "Name": "in_Texto",
+      "Name": "in_BodyText",
       "DisplayName": "Mail Body",
       "Category": "Info",
       "Tooltip": "Text that will be sent in the main message body",
@@ -91,10 +98,11 @@
       "Widget": "TextComposer",
       "IsRequired": true,
       "IsPrincipal": true,
+      "ArgumentType": 0,
       "DataSourceItems": []
     },
     {
-      "Name": "in_FechaComienzoEjec",
+      "Name": "in_DateTimeStart",
       "DisplayName": "Date Process Started",
       "Category": "Info",
       "Tooltip": "String of DateTime in format \"s\" (short datetime form) the process was started at",
@@ -102,6 +110,7 @@
       "Widget": "TextComposer",
       "IsRequired": true,
       "IsPrincipal": true,
+      "ArgumentType": 0,
       "DataSourceItems": []
     }
   ]

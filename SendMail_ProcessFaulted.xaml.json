@@ -14,6 +14,7 @@
       "Widget": "Dictionary",
       "IsRequired": true,
       "IsPrincipal": true,
+      "ArgumentType": 0,
       "DataSourceItems": []
     },
     {
@@ -25,10 +26,11 @@
       "Widget": "Toggle",
       "IsRequired": false,
       "IsPrincipal": true,
+      "ArgumentType": 0,
       "DataSourceItems": []
     },
     {
-      "Name": "in_Adjuntos",
+      "Name": "in_Attachments",
       "DisplayName": "Attachments",
       "Category": "Common",
       "Tooltip": "Array of attachment filepaths",
@@ -36,6 +38,7 @@
       "Widget": "StringArray",
       "IsRequired": false,
       "IsPrincipal": true,
+      "ArgumentType": 0,
       "DataSourceItems": []
     },
     {
@@ -47,6 +50,7 @@
       "Widget": "TextComposer",
       "IsRequired": true,
       "IsPrincipal": true,
+      "ArgumentType": 0,
       "DataSourceItems": null
     },
     {
@@ -58,6 +62,7 @@
       "Widget": "TextComposer",
       "IsRequired": false,
       "IsPrincipal": true,
+      "ArgumentType": 0,
       "DataSourceItems": []
     },
     {
@@ -69,6 +74,7 @@
       "Widget": "TextComposer",
       "IsRequired": false,
       "IsPrincipal": true,
+      "ArgumentType": 0,
       "DataSourceItems": []
     },
     {
@@ -80,10 +86,11 @@
       "Widget": "TextComposer",
       "IsRequired": false,
       "IsPrincipal": true,
+      "ArgumentType": 0,
       "DataSourceItems": []
     },
     {
-      "Name": "in_FechaEjecucion",
+      "Name": "in_DateTimeEnd",
       "DisplayName": "Process Start Date",
       "Category": "Faulted Data",
       "Tooltip": "String of DateTime in format \"s\" (short datetime form) the process was started at",
@@ -91,21 +98,11 @@
       "Widget": "TextComposer",
       "IsRequired": true,
       "IsPrincipal": true,
+      "ArgumentType": 0,
       "DataSourceItems": []
     },
     {
-      "Name": "in_IDEjecucion",
-      "DisplayName": "Job ID",
-      "Category": "Faulted Data",
-      "Tooltip": "Identifier for the job",
-      "Placeholder": null,
-      "Widget": "TextComposer",
-      "IsRequired": true,
-      "IsPrincipal": true,
-      "DataSourceItems": []
-    },
-    {
-      "Name": "in_Modulo",
+      "Name": "in_Subprocess",
       "DisplayName": "Process Module",
       "Category": "Faulted Data",
       "Tooltip": "Process Module (colector/consumidor)",
@@ -113,10 +110,11 @@
       "Widget": "TextComposer",
       "IsRequired": true,
       "IsPrincipal": true,
+      "ArgumentType": 0,
       "DataSourceItems": []
     },
     {
-      "Name": "in_DescripcionExcep",
+      "Name": "in_ExceptionDetails",
       "DisplayName": "Exception Message",
       "Category": "Faulted Data",
       "Tooltip": "Exception Message being thrown",
@@ -124,6 +122,7 @@
       "Widget": "TextComposer",
       "IsRequired": true,
       "IsPrincipal": true,
+      "ArgumentType": 0,
       "DataSourceItems": []
     }
   ]

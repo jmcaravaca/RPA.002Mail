@@ -14,6 +14,7 @@
       "Widget": "Dictionary",
       "IsRequired": true,
       "IsPrincipal": true,
+      "ArgumentType": 0,
       "DataSourceItems": []
     },
     {
@@ -25,10 +26,11 @@
       "Widget": "Toggle",
       "IsRequired": false,
       "IsPrincipal": false,
+      "ArgumentType": 0,
       "DataSourceItems": []
     },
     {
-      "Name": "in_Adjuntos",
+      "Name": "in_Attachments",
       "DisplayName": "Attachments",
       "Category": "Common",
       "Tooltip": "Array of attachment filepaths",
@@ -36,6 +38,7 @@
       "Widget": "StringArray",
       "IsRequired": false,
       "IsPrincipal": false,
+      "ArgumentType": 0,
       "DataSourceItems": []
     },
     {
@@ -47,6 +50,7 @@
       "Widget": "TextComposer",
       "IsRequired": true,
       "IsPrincipal": true,
+      "ArgumentType": 0,
       "DataSourceItems": null
     },
     {
@@ -58,6 +62,7 @@
       "Widget": "TextComposer",
       "IsRequired": false,
       "IsPrincipal": true,
+      "ArgumentType": 0,
       "DataSourceItems": []
     },
     {
@@ -69,6 +74,7 @@
       "Widget": "TextComposer",
       "IsRequired": false,
       "IsPrincipal": true,
+      "ArgumentType": 0,
       "DataSourceItems": []
     },
     {
@@ -80,10 +86,11 @@
       "Widget": "TextComposer",
       "IsRequired": false,
       "IsPrincipal": false,
+      "ArgumentType": 0,
       "DataSourceItems": []
     },
     {
-      "Name": "in_CodigoExcepcion",
+      "Name": "in_ExceptionCode",
       "DisplayName": "Exception Code",
       "Category": "Exception Data",
       "Tooltip": "Exception Code being thrown",
@@ -91,10 +98,11 @@
       "Widget": "TextComposer",
       "IsRequired": true,
       "IsPrincipal": true,
+      "ArgumentType": 0,
       "DataSourceItems": []
     },
     {
-      "Name": "in_DescripcionExcepcion",
+      "Name": "in_ExceptionDetails",
       "DisplayName": "Exception Message",
       "Category": "Exception Data",
       "Tooltip": "Exception Message being thrown",
@@ -102,10 +110,11 @@
       "Widget": "TextComposer",
       "IsRequired": true,
       "IsPrincipal": true,
+      "ArgumentType": 0,
       "DataSourceItems": []
     },
     {
-      "Name": "in_IDTransaccion",
+      "Name": "in_TransactionID",
       "DisplayName": "Item Reference",
       "Category": "Item Data",
       "Tooltip": "Reference of the item that was not processed",
@@ -113,17 +122,7 @@
       "Widget": "TextComposer",
       "IsRequired": true,
       "IsPrincipal": true,
-      "DataSourceItems": []
-    },
-    {
-      "Name": "in_FechaCreacionTransaccion",
-      "DisplayName": "Date Start Transaction",
-      "Category": "Item Data",
-      "Tooltip": "String of DateTime in format \"s\" (short datetime form) the transaction was started at",
-      "Placeholder": null,
-      "Widget": "TextComposer",
-      "IsRequired": true,
-      "IsPrincipal": true,
+      "ArgumentType": 0,
       "DataSourceItems": []
     }
   ]
