@@ -5,7 +5,7 @@
   "main": "NewActivity.xaml",
   "dependencies": {
     "System.Text.Encoding.CodePages": "7.0.0",
-    "UiPath.Excel.Activities": "2.16.2",
+    "UiPath.Excel.Activities": "2.20.1",
     "UiPath.Mail.Activities": "1.19.0",
     "UiPath.MicrosoftOffice365.Activities": "2.6.25",
     "UiPath.System.Activities": "23.10.6",
