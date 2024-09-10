@@ -47,7 +47,7 @@
       "Category": "Common",
       "Tooltip": "Contact language. Valid values: es-ES, en-US, pt-BR",
       "Placeholder": null,
-      "Widget": "TextComposer",
+      "Widget": null,
       "IsRequired": true,
       "IsPrincipal": true,
       "ArgumentType": 0,
