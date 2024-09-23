@@ -26,7 +26,7 @@
     <x:Null />
   </VisualBasic.Settings>
   <sap2010:Annotation.AnnotationText>UPTF00000134eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjoiU2VuZCBtYWlsIHdpdGggXCJHZW5lcmljIEluZm9ybWF0aW9uXCIgdGVtcGxhdGVcclxuVGhlIHNlbmRlciBlbWFpbCBhbmQgbmFtZSBhcmUgdGFrZW4gZnJvbSBDb25maWdcclxuQXR0YWNobWVudHMgYXJlIG5vdCByZXF1aXJlZCIsIjxWZXJzaW9uPmtfX0JhY2tpbmdGaWVsZCI6MX0=</sap2010:Annotation.AnnotationText>
-  <sap:VirtualizedContainerService.HintSize>1234,2715</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>994,2715</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>EnvioEmail_ComunicaciónGeneral_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="33">
@@ -116,7 +116,7 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Send mail with &quot;Generic Information&quot; template&#xD;&#xA;The sender email and name are taken from Config&#xD;&#xA;Attachments are not required" DisplayName="EnvioEmail_ComunicacionGeneral" sap:VirtualizedContainerService.HintSize="696,2650" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Send mail with &quot;Generic Information&quot; template&#xA;The sender email and name are taken from Config&#xA;Attachments are not required" DisplayName="EnvioEmail_ComunicacionGeneral" sap:VirtualizedContainerService.HintSize="696,2650" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="CuerpoHTML" />
       <Variable x:TypeArguments="x:String" Name="AsuntoEmail" />
@@ -148,7 +148,7 @@
           <InArgument x:TypeArguments="x:String" x:Key="in_FileName">PlantillaProceso_ComunicacionGeneral.mht</InArgument>
         </ui:InvokeWorkflowFile.Arguments>
       </ui:InvokeWorkflowFile>
-      <ui:ReadTextFile File="{x:Null}" Content="[CuerpoHTML]" DisplayName="Read Text File" Encoding="windows-1250" FileName="[templatefile]" sap:VirtualizedContainerService.HintSize="388,80" sap2010:WorkflowViewState.IdRef="ReadTextFile_2" />
+      <ui:ReadTextFile File="{x:Null}" Content="[CuerpoHTML]" DisplayName="Read Text File" Encoding="UTF-8" FileName="[templatefile]" sap:VirtualizedContainerService.HintSize="388,80" sap2010:WorkflowViewState.IdRef="ReadTextFile_2" />
       <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,141" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Trace" Message="[&quot;Template read&quot;]" />
     </Sequence>
     <Sequence DisplayName="Sustitucion de variables" sap:VirtualizedContainerService.HintSize="634,1102" sap2010:WorkflowViewState.IdRef="Sequence_3">
@@ -228,7 +228,7 @@
                 <OutArgument x:TypeArguments="x:String">[AsuntoEmail]</OutArgument>
               </ui:AssignOperation.To>
               <ui:AssignOperation.Value>
-                <InArgument x:TypeArguments="x:String">[in_Config("Subject_EmailComunicacion-" + in_ContactLanguage).ToString.Replace(in_config("Sust_NombreProceso").ToString,in_Config("MailProcessFullName").ToString)]</InArgument>
+                <InArgument x:TypeArguments="x:String">[in_Config("Subject_EmailComunicacion").ToString.Replace(in_config("Sust_NombreProceso").ToString,in_Config("MailProcessFullName").ToString)]</InArgument>
               </ui:AssignOperation.Value>
             </ui:AssignOperation>
           </scg:List>

@@ -1,4 +1,4 @@
-{
+﻿{
   "Sust_NombreProceso": "[NOMBREPROCESO]",
   "Sust_Usuario": "[Usuario]",
   "Sust_FechaEjec": "[FECHAEJECUCION]",
@@ -7,6 +7,11 @@
   "Sust_IDTransaccion": "[IDTRANSACCION]",
   "Sust_TextoCuerpo": "[TEXTO]",
   "Sust_Modulo": "[MODULO]",
+  "Subject_EmailComunicacion": "[RPA] - [Nombre Proceso] - Comunicación",
+  "Subject_EmailTerminated": "[RPA] - [Nombre Proceso] - Ejecución Fallida",
+  "Subject_EmailComienzo": "[RPA] - [Nombre Proceso] - Comienzo",
+  "Subject_EmailErrorNegocio": "[RPA] - [Nombre Proceso] - Excepción de Negocio",
+  "Subject_EmailFinished": "[RPA] - [Nombre Proceso] - Ejecución Finalizada",	
   "Subject_EmailComunicacion-es-ES": "[RPA] - [Nombre Proceso] - Comunicación",
   "Subject_EmailTerminated-es-ES": "[RPA] - [Nombre Proceso] - Ejecución Fallida",
   "Subject_EmailComienzo-es-ES": "[RPA] - [Nombre Proceso] - Comienzo",

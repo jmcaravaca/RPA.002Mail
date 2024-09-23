@@ -1,9 +1,9 @@
 MIME-Version: 1.0
-Content-Type: multipart/related; boundary="----=_NextPart_01DB0365.B1C1F420"
+Content-Type: multipart/related; boundary="----=_NextPart_01DB0D94.76AD6E80"
 
 Este documento es una página web de un solo archivo, también conocido como archivo de almacenamiento web. Si está viendo este mensaje, su explorador o editor no admite archivos de almacenamiento web. Descargue un explorador que admita este tipo de archivos, como Windows® Internet Explorer®.
 
-------=_NextPart_01DB0365.B1C1F420
+------=_NextPart_01DB0D94.76AD6E80
 Content-Location: file:///C:/1ECE90EF/PlantillaProceso_Finalizado.htm
 Content-Transfer-Encoding: quoted-printable
 Content-Type: text/html; charset="windows-1252"
@@ -36,10 +36,10 @@ w\:* {behavior:url(#default#VML);}
  <o:DocumentProperties>
   <o:Author>Caravaca Vidal, Jorge Manuel</o:Author>
   <o:LastAuthor>Caravaca Vidal, Jorge Manuel</o:LastAuthor>
-  <o:Revision>3</o:Revision>
-  <o:TotalTime>3</o:TotalTime>
+  <o:Revision>4</o:Revision>
+  <o:TotalTime>4</o:TotalTime>
   <o:Created>2024-09-10T07:37:00Z</o:Created>
-  <o:LastSaved>2024-09-10T07:42:00Z</o:LastSaved>
+  <o:LastSaved>2024-09-23T06:42:00Z</o:LastSaved>
   <o:Pages>1</o:Pages>
   <o:Words>48</o:Words>
   <o:Characters>266</o:Characters>
@@ -59,7 +59,7 @@ href=3D"PlantillaProceso_Finalizado_archivos/colorschememapping.xml">
 <!--[if gte mso 9]><xml>
  <w:WordDocument>
   <w:View>Print</w:View>
-  <w:Zoom>110</w:Zoom>
+  <w:Zoom>130</w:Zoom>
   <w:SpellingState>Clean</w:SpellingState>
   <w:GrammarState>Clean</w:GrammarState>
   <w:DocumentKind>DocumentEmail</w:DocumentKind>
@@ -964,7 +964,7 @@ k Accent 6"/>
 	mso-font-charset:1;
 	mso-generic-font-family:roman;
 	mso-font-pitch:variable;
-	mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
+	mso-font-signature:0 0 0 0 0 0;}
 @font-face
 	{font-family:Calibri;
 	panose-1:2 15 5 2 2 2 4 3 2 4;
@@ -1223,7 +1223,7 @@ itle=3D"ClarkeSeparador"/>
  <tr>
   <td></td>
   <td><img width=3D74 height=3D9
-  src=3D"PlantillaProceso_Finalizado_archivos/image005.jpg" alt=3DClarkeSep=
+  src=3D"PlantillaProceso_Finalizado_archivos/image002.jpg" alt=3DClarkeSep=
 arador
   v:shapes=3D"Imagen_x0020_2"></td>
  </tr>
@@ -1270,13 +1270,8 @@ mso-ansi-language:#580A'><o:p>&nbsp;</o:p></span></p>
 <p class=3DMsoNormal style=3D'text-indent:35.4pt'><span lang=3Des-419
 style=3D'font-family:"Verdana",sans-serif;color:#4B4F54;mso-ansi-language:#=
 580A'>Te
-comunico que he finalizado la ejecución para el proceso [</span><span
-lang=3Des-419 style=3D'font-size:18.0pt;font-family:"Verdana",sans-serif;
-color:#4B4F54;mso-ansi-language:#580A'>NOMBREPROCESO</span><span lang=3Des-=
-419
-style=3D'font-family:"Verdana",sans-serif;color:#4B4F54;mso-ansi-language:#=
-580A'>]
-<o:p></o:p></span></p>
+comunico que he finalizado la ejecución para el proceso [NOMBREPROCESO] <o:=
+p></o:p></span></p>
 
 <p class=3DMsoNormal><span lang=3Des-419 style=3D'font-family:"Verdana",san=
 s-serif;
@@ -1306,13 +1301,9 @@ f;
   border-left:none;mso-border-left-alt:solid #4B4F54 .5pt;mso-border-alt:so=
 lid #4B4F54 .5pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=3DMsoPlainText><span lang=3Des-419 style=3D'font-family:"Verdana=
-",sans-serif;
-  color:#4B4F54;mso-ansi-language:#580A'>[</span><span lang=3Des-419
-  style=3D'font-size:18.0pt;font-family:"Verdana",sans-serif;color:#4B4F54;
-  mso-ansi-language:#580A'>NOMBREPROCESO</span><span lang=3Des-419
+  <p class=3DMsoNormal style=3D'text-indent:35.4pt'><span lang=3Des-419
   style=3D'font-family:"Verdana",sans-serif;color:#4B4F54;mso-ansi-language=
-:#580A'>]</span><span
+:#580A'>[NOMBREPROCESO]</span><span
   style=3D'font-family:"Verdana",sans-serif'><o:p></o:p></span></p>
   </td>
  </tr>
@@ -1333,13 +1324,9 @@ r-left:
   mso-border-top-alt:solid #4B4F54 .5pt;mso-border-left-alt:solid #4B4F54 .=
 5pt;
   mso-border-alt:solid #4B4F54 .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=3DMsoPlainText><span lang=3Des-419 style=3D'font-family:"Verdana=
-",sans-serif;
-  color:#4B4F54;mso-ansi-language:#580A'>[</span><span lang=3Des-419
-  style=3D'font-size:14.0pt;font-family:"Verdana",sans-serif;color:#FF0066;
-  mso-ansi-language:#580A'>FECHAEJECUCION</span><span lang=3Des-419
+  <p class=3DMsoNormal style=3D'text-indent:35.4pt'><span lang=3Des-419
   style=3D'font-family:"Verdana",sans-serif;color:#4B4F54;mso-ansi-language=
-:#580A'>]</span><span
+:#580A'>[FECHAEJECUCION]</span><span
   style=3D'font-family:"Verdana",sans-serif'><o:p></o:p></span></p>
   </td>
  </tr>
@@ -1441,7 +1428,7 @@ n'>
   </v:shape><![endif]--><![if !vml]><span style=3D'mso-ignore:vglayout;
   position:absolute;z-index:-1895822336;margin-left:0px;margin-top:0px;
   width:146px;height:92px'><img width=3D146 height=3D92
-  src=3D"PlantillaProceso_Finalizado_archivos/image006.png" alt=3D51395A01 =
+  src=3D"PlantillaProceso_Finalizado_archivos/image004.png" alt=3D51395A01 =
 v:shapes=3D"Imagen_x0020_3"></span><![endif]><span
   style=3D'font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast=
 -font-family:
@@ -1471,25 +1458,10 @@ m 5.4pt;
 9.0pt;
   mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element=
 -anchor-horizontal:
-  margin;mso-element-top:25.8pt;mso-height-rule:exactly'><span lang=3DEN-US
-  style=3D'font-size:10.0pt;font-family:"Georgia",serif;mso-fareast-font-fa=
-mily:
-  "Times New Roman";mso-fareast-theme-font:minor-fareast;mso-bidi-font-fami=
-ly:
-  "Times New Roman";mso-bidi-theme-font:minor-bidi;color:#FF0066;mso-ansi-l=
-anguage:
-  EN-US;mso-fareast-language:EN-US;mso-no-proof:yes'>[</span><span lang=3De=
-s-419
+  margin;mso-element-top:25.8pt;mso-height-rule:exactly'><span lang=3Des-419
   style=3D'font-family:"Verdana",sans-serif;color:#4B4F54;mso-ansi-language=
 :#580A;
-  mso-fareast-language:EN-US'>NOMBREPROCESO</span><span lang=3DEN-US
-  style=3D'font-size:10.0pt;font-family:"Georgia",serif;mso-fareast-font-fa=
-mily:
-  "Times New Roman";mso-fareast-theme-font:minor-fareast;mso-bidi-font-fami=
-ly:
-  "Times New Roman";mso-bidi-theme-font:minor-bidi;color:#FF0066;mso-ansi-l=
-anguage:
-  EN-US;mso-fareast-language:EN-US;mso-no-proof:yes'>]<o:p></o:p></span></p>
+  mso-fareast-language:EN-US'>[NOMBREPROCESO]<o:p></o:p></span></p>
   <p class=3DMsoNormal style=3D'mso-element:frame;mso-element-frame-hspace:=
 9.0pt;
   mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element=
@@ -1648,7 +1620,7 @@ mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
 
 </html>
 
-------=_NextPart_01DB0365.B1C1F420
+------=_NextPart_01DB0D94.76AD6E80
 Content-Location: file:///C:/1ECE90EF/PlantillaProceso_Finalizado_archivos/themedata.thmx
 Content-Transfer-Encoding: base64
 Content-Type: application/vnd.ms-officetheme
@@ -1713,7 +1685,7 @@ IAAAFgAAAAAAAAAAAAAAAADWAgAAdGhlbWUvdGhlbWUvdGhlbWUxLnhtbFBLAQItABQABgAIAAAA
 IQAN0ZCftgAAABsBAAAnAAAAAAAAAAAAAAAAAKAKAAB0aGVtZS90aGVtZS9fcmVscy90aGVtZU1h
 bmFnZXIueG1sLnJlbHNQSwUGAAAAAAUABQBdAQAAmwsAAAAA
 
-------=_NextPart_01DB0365.B1C1F420
+------=_NextPart_01DB0D94.76AD6E80
 Content-Location: file:///C:/1ECE90EF/PlantillaProceso_Finalizado_archivos/colorschememapping.xml
 Content-Transfer-Encoding: quoted-printable
 Content-Type: text/xml
@@ -1723,8 +1695,8 @@ Content-Type: text/xml
  bg1=3D"lt1" tx1=3D"dk1" bg2=3D"lt2" tx2=3D"dk2" accent1=3D"accent1" accent=
 2=3D"accent2" accent3=3D"accent3" accent4=3D"accent4" accent5=3D"accent5" a=
 ccent6=3D"accent6" hlink=3D"hlink" folHlink=3D"folHlink"/>
-------=_NextPart_01DB0365.B1C1F420
-Content-Location: file:///C:/1ECE90EF/PlantillaProceso_Finalizado_archivos/image005.jpg
+------=_NextPart_01DB0D94.76AD6E80
+Content-Location: file:///C:/1ECE90EF/PlantillaProceso_Finalizado_archivos/image002.jpg
 Content-Transfer-Encoding: base64
 Content-Type: image/jpeg
 
@@ -1744,8 +1716,8 @@ XuQpaLlf6wv/AJ9L7zwz7JqX/Pvef9+2o+w6kf8Al1vD/wBs2/wr3WlFLmD/AFjn/wA+1954T/Z+
 pH/l0vD/ANsm/wAKP7N1I/8ALleH/ti3+Fe8ilpcwv8AWWp/z7X3niWjabqCa5YM9ldKq3EZJMTA
 Abh7V7bRRUt3PJzDMJY6UZSjax//2R==
 
-------=_NextPart_01DB0365.B1C1F420
-Content-Location: file:///C:/1ECE90EF/PlantillaProceso_Finalizado_archivos/image006.png
+------=_NextPart_01DB0D94.76AD6E80
+Content-Location: file:///C:/1ECE90EF/PlantillaProceso_Finalizado_archivos/image004.png
 Content-Transfer-Encoding: base64
 Content-Type: image/png
 
@@ -1873,7 +1845,7 @@ CVD6cLykBaThuKoJmJMFpAQofThe0gLScFzVBMzJAlIClD4cL2kBaTiuagLmZAEpAUofjpe0gDQc
 VzUBc7KAlAClD8dLWkAajquagDlZQEqA0ofjJS0gDcdVTcCcLCAlQOnD8ZL/D93A8Qy0zwoAAAAA
 AElFTkSuQmCC
 
-------=_NextPart_01DB0365.B1C1F420
+------=_NextPart_01DB0D94.76AD6E80
 Content-Location: file:///C:/1ECE90EF/PlantillaProceso_Finalizado_archivos/image001.jpg
 Content-Transfer-Encoding: base64
 Content-Type: image/jpeg
@@ -1899,7 +1871,7 @@ a11csD1BlYj+df1Cx+GdOhbK6fZKemRAo/pUqaNZxtlbS2UjuIl/wpfXf7pzT+mHCG2TL/wf/wDc
 D+XH7dN/z2l/77Nf1KW8vnwI+Mb1DY9M0z7BB/zxi/74FTVz16/tLaWsfz/43eM64++pWwX1f6v7
 T/l57Tm9p7P+5C1uTzvfpbX/2b==
 
-------=_NextPart_01DB0365.B1C1F420
+------=_NextPart_01DB0D94.76AD6E80
 Content-Location: file:///C:/1ECE90EF/PlantillaProceso_Finalizado_archivos/image003.png
 Content-Transfer-Encoding: base64
 Content-Type: image/png
@@ -2107,7 +2079,7 @@ c0zHNDW3chwBWVBi5Bj/gi4F+vyQwf2G+5qsCgrBBEVWBYUggSKrgkKQQJFVQSFIoMiqoBAkUGRV
 UAgSKLIqKAQJFFkVFIIEiqwKCkECRVYFhSCBIquCQpBAkVVBIUigyKqgECRQZFVQCBIosiooBAkU
 WRUUggSKrAoKQQJFVgWFIIEiq4JCUIDo/wNlM/WrvqrywgAAAABJRU5ErkJggk==
 
-------=_NextPart_01DB0365.B1C1F420
+------=_NextPart_01DB0D94.76AD6E80
 Content-Location: file:///C:/1ECE90EF/PlantillaProceso_Finalizado_archivos/filelist.xml
 Content-Transfer-Encoding: quoted-printable
 Content-Type: text/xml; charset="utf-8"
@@ -2117,9 +2089,9 @@ Content-Type: text/xml; charset="utf-8"
  <o:File HRef=3D"themedata.thmx"/>
  <o:File HRef=3D"colorschememapping.xml"/>
  <o:File HRef=3D"image001.jpg"/>
- <o:File HRef=3D"image005.jpg"/>
+ <o:File HRef=3D"image002.jpg"/>
  <o:File HRef=3D"image003.png"/>
- <o:File HRef=3D"image006.png"/>
+ <o:File HRef=3D"image004.png"/>
  <o:File HRef=3D"filelist.xml"/>
 </xml>
-------=_NextPart_01DB0365.B1C1F420--
+------=_NextPart_01DB0D94.76AD6E80--

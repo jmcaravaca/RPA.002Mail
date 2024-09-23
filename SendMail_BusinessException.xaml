@@ -35,7 +35,7 @@
     <x:Null />
   </VisualBasic.Settings>
   <sap2010:Annotation.AnnotationText>UPTF00000134eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjoiU2VuZCBtYWlsIHdpdGggXCJCdXNpbmVzcyBFeGNlcHRpb25cIiB0ZW1wbGF0ZVxyXG5UaGUgc2VuZGVyIGVtYWlsIGFuZCBuYW1lIGFyZSB0YWtlbiBmcm9tIENvbmZpZ1xyXG5BdHRhY2htZW50cyBhcmUgbm90IHJlcXVpcmVkIiwiPFZlcnNpb24+a19fQmFja2luZ0ZpZWxkIjoxfQ==</sap2010:Annotation.AnnotationText>
-  <sap:VirtualizedContainerService.HintSize>1234,2746</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>994,2746</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>EnvioEmail_ExcepcionNegocio_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -126,7 +126,7 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Send mail with &quot;Business Exception&quot; template&#xD;&#xA;The sender email and name are taken from Config&#xD;&#xA;Attachments are not required" DisplayName="EnvioEmail_ExcepcionNegocio" sap:VirtualizedContainerService.HintSize="696,2681" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Send mail with &quot;Business Exception&quot; template&#xA;The sender email and name are taken from Config&#xA;Attachments are not required" DisplayName="EnvioEmail_ExcepcionNegocio" sap:VirtualizedContainerService.HintSize="696,2681" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="CuerpoHTML" />
       <Variable x:TypeArguments="x:String" Name="AsuntoEmail" />
@@ -158,7 +158,7 @@
           <InArgument x:TypeArguments="x:String" x:Key="in_FileName">PlantillaProceso_ExcepcionNegocio.mht</InArgument>
         </ui:InvokeWorkflowFile.Arguments>
       </ui:InvokeWorkflowFile>
-      <ui:ReadTextFile File="{x:Null}" Content="[CuerpoHTML]" DisplayName="Read Text File" Encoding="windows-1250" FileName="[templatefile]" sap:VirtualizedContainerService.HintSize="388,80" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
+      <ui:ReadTextFile File="{x:Null}" Content="[CuerpoHTML]" DisplayName="Read Text File" Encoding="UTF-8" FileName="[templatefile]" sap:VirtualizedContainerService.HintSize="388,80" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
       <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,141" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Trace" Message="[&quot;Template read&quot;]" />
     </Sequence>
     <Sequence DisplayName="Common Actions" sap:VirtualizedContainerService.HintSize="634,1286" sap2010:WorkflowViewState.IdRef="Sequence_3">
@@ -222,8 +222,7 @@
                 <OutArgument x:TypeArguments="x:String">[AsuntoEmail]</OutArgument>
               </ui:AssignOperation.To>
               <ui:AssignOperation.Value>
-                <InArgument x:TypeArguments="x:String" xml:space="preserve">[in_Config("Subject_EmailErrorNegocio-" +
-in_ContactLanguage).ToString.Replace(
+                <InArgument x:TypeArguments="x:String" xml:space="preserve">[in_Config("Subject_EmailErrorNegocio").ToString.Replace(
 	in_config("Sust_NombreProceso").ToString,
 	in_config("MailProcessFullName").toString)]</InArgument>
               </ui:AssignOperation.Value>

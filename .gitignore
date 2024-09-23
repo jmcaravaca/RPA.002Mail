@@ -12,3 +12,4 @@ Data/Temp
 .local/ProjectSettings.json
 *Expressions_*.dll
 Templates/*
+MailTemplates/*
