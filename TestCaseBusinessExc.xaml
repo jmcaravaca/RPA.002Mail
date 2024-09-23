@@ -8,7 +8,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1124,827</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>994,819</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>TestCaseBusinessExc_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="44">
@@ -75,20 +75,35 @@
       <AssemblyReference>UiPath.System.Activities</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="TestCaseBusinessExc" sap:VirtualizedContainerService.HintSize="512,621" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="TestCaseBusinessExc" sap:VirtualizedContainerService.HintSize="512,742" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)" Name="ConfigOrig" />
+    </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="... Given" sap:VirtualizedContainerService.HintSize="450,103" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="... Given" sap:VirtualizedContainerService.HintSize="450,224" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="InitAllSettings.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="InitAllSettings.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="in_ConfigFile">
+            <Literal x:TypeArguments="x:String">TestHelpers\Config.json</Literal>
+          </InArgument>
+          <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="out_Config">
+            <VisualBasicReference x:TypeArguments="scg:Dictionary(x:String, x:Object)" ExpressionText="ConfigOrig" />
+          </OutArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
     </Sequence>
     <Sequence DisplayName="... When" sap:VirtualizedContainerService.HintSize="450,224" sap2010:WorkflowViewState.IdRef="Sequence_3">
       <Sequence.Variables>
@@ -101,17 +116,30 @@
       </sap:WorkflowViewStateService.ViewState>
       <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="SendMail_BusinessException.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="SendMail_BusinessException.xaml">
         <ui:InvokeWorkflowFile.Arguments>
-          <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[Config]</InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="in_MailTo">[MailTO]</InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="in_MailCC" />
-          <InArgument x:TypeArguments="x:String" x:Key="in_MailCCO" />
-          <InArgument x:TypeArguments="x:Boolean" x:Key="in_ContinueError">True</InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="in_FechaCreacionTransaccion">[Now.ToString("ddMMyyyy")]</InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="in_IDTransaccion">TransactionID</InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="in_CodigoExcepcion">0-0008-0000-0000</InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="in_DescripcionExcepcion">[TextError]</InArgument>
-          <InArgument x:TypeArguments="s:String[]" x:Key="in_Adjuntos">[Nothing]</InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="in_ContactLanguage">[ContactLanguage]</InArgument>
+          <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">
+            <VisualBasicValue x:TypeArguments="scg:Dictionary(x:String, x:Object)" ExpressionText="ConfigOrig" />
+          </InArgument>
+          <InArgument x:TypeArguments="s:String[]" x:Key="in_MailTo">
+            <VisualBasicValue x:TypeArguments="s:String[]" ExpressionText="{}{&quot;jmcaravaca@minsait.com&quot;}" />
+          </InArgument>
+          <InArgument x:TypeArguments="s:String[]" x:Key="in_MailCC" />
+          <InArgument x:TypeArguments="s:String[]" x:Key="in_MailCCO" />
+          <InArgument x:TypeArguments="x:Boolean" x:Key="in_ContinueError">
+            <Literal x:TypeArguments="x:Boolean" Value="True" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_TransactionID">
+            <Literal x:TypeArguments="x:String">1234</Literal>
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_ExceptionCode">
+            <Literal x:TypeArguments="x:String">1-1111-1111-1111</Literal>
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_ExceptionDetails">
+            <Literal x:TypeArguments="x:String">Error Test</Literal>
+          </InArgument>
+          <InArgument x:TypeArguments="s:String[]" x:Key="in_Attachments" />
+          <InArgument x:TypeArguments="x:String" x:Key="in_ContactLanguage">
+            <VisualBasicValue x:TypeArguments="x:String" ExpressionText="ContactLanguage" />
+          </InArgument>
         </ui:InvokeWorkflowFile.Arguments>
       </ui:InvokeWorkflowFile>
     </Sequence>

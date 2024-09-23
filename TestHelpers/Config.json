@@ -1,0 +1,10 @@
+﻿{
+    "MailProcessFullName" : "TestProcess",
+    "MailProcessShortName": "TestProcess", 
+    "MailProcessNickName" : "TestProcess",
+    "MailSenderName" : "TestProcess",
+    "MailCountry" : "TestProcess",
+    "MailBusinessUser" : "TestProcess",
+	"NoReplyMail_User" : "arpa_ds_md@madrid.org"
+
+}

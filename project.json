@@ -42,7 +42,8 @@
         "_CheckAndSendMail.xaml",
         "FormatHTMLMessage.xaml",
         "InitAllSettings.xaml",
-        "_GetStorageFiles.xaml"
+        "_GetStorageFiles.xaml",
+        "TestHelpers/InitAllSettings.xaml"
       ]
     },
     "processOptions": {
