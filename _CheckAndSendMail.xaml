@@ -10,7 +10,7 @@
     <x:Property Name="in_CuerpoHTML" Type="InArgument(x:String)" />
   </x:Members>
   <sap2010:Annotation.AnnotationText>UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9</sap2010:Annotation.AnnotationText>
-  <sap:VirtualizedContainerService.HintSize>994,1323</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>994,1424</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="54">
@@ -109,13 +109,13 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Sequence SendMail" sap:VirtualizedContainerService.HintSize="672,1258" sap2010:WorkflowViewState.IdRef="Sequence_34">
+  <Sequence DisplayName="Sequence SendMail" sap:VirtualizedContainerService.HintSize="672,1359" sap2010:WorkflowViewState.IdRef="Sequence_34">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch 'Enviar mail'" sap:VirtualizedContainerService.HintSize="610,1147" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+    <TryCatch DisplayName="Try Catch 'Enviar mail'" sap:VirtualizedContainerService.HintSize="610,1248" sap2010:WorkflowViewState.IdRef="TryCatch_3">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -123,14 +123,14 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence DisplayName="Enviar mail" sap:VirtualizedContainerService.HintSize="572,919" sap2010:WorkflowViewState.IdRef="Sequence_30">
+        <Sequence DisplayName="Enviar mail" sap:VirtualizedContainerService.HintSize="572,1020" sap2010:WorkflowViewState.IdRef="Sequence_30">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <uma:Office365ApplicationScope ApplicationId="{x:Null}" ApplicationSecret="{x:Null}" BrowserRuntimeItemFriendlyName="{x:Null}" BrowserRuntimeItemFullPath="{x:Null}" BrowserRuntimeItemId="{x:Null}" BrowserRuntimeParentItemId="{x:Null}" CertificateAsBase64="{x:Null}" CertificatePassword="{x:Null}" ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" Connector="{x:Null}" ContinueOnError="{x:Null}" Password="{x:Null}" SecureApplicationSecret="{x:Null}" SecurePassword="{x:Null}" TenantId="{x:Null}" Timeout="{x:Null}" Username="{x:Null}" Account="Please select an account." AuthenticationType="InteractiveToken" BrowserItemFriendlyName="M365OAuthAsset" BrowserItemFullPath="RPA CoE" BrowserItemId="712851" BrowserParentItemId="2026758" ConfigLocation="OrchestratorAsset" DisplayName="Microsoft 365 Scope" Environment="Global" sap:VirtualizedContainerService.HintSize="510,627" sap2010:WorkflowViewState.IdRef="Office365ApplicationScope_1" ImpersonatedUserEmailAddress="[in_Config(&quot;NoReplyMail_User&quot;).ToString]" ManualRuntimeItemFullPath="RPA CoE/M365OAuthAsset" OAuthApplication="UiPath" RuntimeItemInputMode="RelativePath" UseConnectionService="False">
+          <uma:Office365ApplicationScope ApplicationId="{x:Null}" ApplicationSecret="{x:Null}" BrowserRuntimeItemFriendlyName="{x:Null}" BrowserRuntimeItemFullPath="{x:Null}" BrowserRuntimeItemId="{x:Null}" BrowserRuntimeParentItemId="{x:Null}" CertificateAsBase64="{x:Null}" CertificatePassword="{x:Null}" ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" Connector="{x:Null}" ContinueOnError="{x:Null}" Password="{x:Null}" SecureApplicationSecret="{x:Null}" SecurePassword="{x:Null}" TenantId="{x:Null}" Timeout="{x:Null}" Username="{x:Null}" Account="Please select an account." AuthenticationType="InteractiveToken" BrowserItemFriendlyName="M365OAuthAsset" BrowserItemFullPath="RPA CoE" BrowserItemId="712851" BrowserParentItemId="2026758" ConfigLocation="OrchestratorAsset" DisplayName="Microsoft 365 Scope" Environment="Global" sap:VirtualizedContainerService.HintSize="510,728" sap2010:WorkflowViewState.IdRef="Office365ApplicationScope_1" ImpersonatedUserEmailAddress="[in_Config(&quot;NoReplyMail_User&quot;).ToString]" ManualRuntimeItemFullPath="RPA CoE/M365OAuthAsset" OAuthApplication="UiPath" RuntimeItemInputMode="RelativePath" UseConnectionService="False">
             <uma:Office365ApplicationScope.AuthenticationScopes>
               <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
             </uma:Office365ApplicationScope.AuthenticationScopes>

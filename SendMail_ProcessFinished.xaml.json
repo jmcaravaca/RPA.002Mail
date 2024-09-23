@@ -9,7 +9,7 @@
       "Name": "in_Config",
       "DisplayName": "Config",
       "Category": "Common",
-      "Tooltip": "Config Dictionary. Needs \"Mail\" related keys and \"CredMail\"\r\n",
+      "Tooltip": "Config Dictionary.\r\n\r\nNEEDED KEYS:\r\n\r\nMailBusinessUser\r\nMailProcessFullName\r\nNoReplyMail_User",
       "Placeholder": null,
       "Widget": "Dictionary",
       "IsRequired": true,
